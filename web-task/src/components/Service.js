@@ -2,13 +2,17 @@
 import s1Img from "../assets/images/s1.png";
 import s2Img from "../assets/images/s2.png";
 import s3Img from "../assets/images/s3.png";
+import { useTranslation } from 'react-i18next';
+
 const Service = () => {
+    const { t } = useTranslation(); // Access the translation function
+
     return (
     <>
     <section className="service_section layout_padding">
         <div className="container ">
             <div className="heading_container heading_center">
-                <h2> Our Services </h2>
+                <h2> {t('service.title')}</h2>
             </div>
             <div className="row">
                 <div className="col-sm-6 col-md-4 mx-auto">
@@ -18,11 +22,10 @@ const Service = () => {
                         </div>
                         <div className="detail-box">
                             <h5>
-                                Maintenance
+                                {t('service.maintenance')}
                             </h5>
                             <p>
-                                when looking at its layout. The point of using Lorem Ipsum is
-                                that it has a more-or-less normal
+                                {t('service.maintenanceDescription')}
                             </p>
                         </div>
                     </div>
@@ -34,11 +37,10 @@ const Service = () => {
                         </div>
                         <div className="detail-box">
                             <h5>
-                                Electrical
+                                {t('service.electrical')}
                             </h5>
                             <p>
-                                when looking at its layout. The point of using Lorem Ipsum is
-                                that it has a more-or-less normal
+                                {t('service.electricalDescription')}
                             </p>
                         </div>
                     </div>
@@ -50,11 +52,10 @@ const Service = () => {
                         </div>
                         <div className="detail-box">
                             <h5>
-                                Plumbing
+                                {t('service.plumbing')}
                             </h5>
                             <p>
-                                when looking at its layout. The point of using Lorem Ipsum is
-                                that it has a more-or-less normal
+                                {t('service.plumbingDescription')}
                             </p>
                         </div>
                     </div>
@@ -62,7 +63,7 @@ const Service = () => {
             </div>
             <div className="btn-box">
                 <a href="">
-                    View More
+                    >{t('service.viewMore')}
                 </a>
             </div>
         </div>

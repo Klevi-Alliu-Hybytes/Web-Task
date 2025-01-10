@@ -1,6 +1,9 @@
 import professionalImg from "../assets/images/professional-img.png";
+import { useTranslation } from 'react-i18next';
 
 const Professional = () => {
+    const { t } = useTranslation(); // Access the translation function
+
     return (
         <>
             <section className="professional_section layout_padding">
@@ -14,16 +17,14 @@ const Professional = () => {
                         <div className="col-md-6 ">
                             <div className="detail-box">
                                 <h2>
-                                    We Provide Professional <br/>
-                                    Home Services.
+                                    {t('professional.title1')} <br/>
+                                    {t('professional.title2')}
                                 </h2>
                                 <p>
-                                    randomised words which don't look even slightly believable. If you are going to use
-                                    a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
-                                    hidden in the middle of text. All randomised words which don't look even slightly
+                                    {t('professional.description')}
                                 </p>
                                 <a href="">
-                                    Read More
+                                    {t('professional.readMore')}
                                 </a>
                             </div>
                         </div>

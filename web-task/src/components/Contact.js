@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+    const { t } = useTranslation(); // Access the translation function
+
     useEffect(() => {
         const script = document.createElement("script");
         script.src = "https://maps.googleapis.com/maps/api/js";
@@ -24,25 +27,25 @@ const Contact = () => {
         <section className="contact_section layout_padding">
             <div className="container">
                 <div className="heading_container">
-                    <h2>Contact Us</h2>
+                    <h2>{t("contact.heading")}</h2>
                 </div>
                 <div className="row">
                     <div className="col-md-6">
                         <form action="">
                             <div>
-                                <input type="text" placeholder="Name" />
+                                <input type="text" placeholder={t("contact.namePlaceholder")} />
                             </div>
                             <div>
-                                <input type="text" placeholder="Phone Number" />
+                                <input type="text" placeholder={t("contact.phonePlaceholder")} />
                             </div>
                             <div>
-                                <input type="email" placeholder="Email" />
+                                <input type="email" placeholder={t("contact.emailPlaceholder")} />
                             </div>
                             <div>
-                                <input type="text" className="message-box" placeholder="Message" />
+                                <input type="text" className="message-box" placeholder={t("contact.messagePlaceholder")} />
                             </div>
                             <div className="d-flex">
-                                <button type="submit">SEND</button>
+                                <button type="submit">{t("contact.sendButton")}</button>
                             </div>
                         </form>
                     </div>

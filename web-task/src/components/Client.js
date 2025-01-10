@@ -1,24 +1,38 @@
-import React from 'react';
+import React, {useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
+import { useTranslation } from 'react-i18next';
 
 import client1Img from "../assets/images/client-1.jpg";
 import client2Img from "../assets/images/client-2.jpg";
+import i18n from "i18next";
 
 const Client = () => {
+    const { t } = useTranslation(); // Access the translation function
+    const swiperRef = useRef(null);
+
+
+// Reset Swiper instance when the language changes
+    useEffect(() => {
+        if (swiperRef.current) {
+            swiperRef.current.swiper.update(); // This updates Swiper after language change
+        }
+    }, [i18n.language]); // Run whenever the language changes
+
     return (
 
         <section className="client_section ">
             <div className="container">
                 <div className="heading_container heading_center">
                     <h2>
-                        What Our Clients Say
+                        {t('client.heading')}
                     </h2>
                 </div>
 
 
                 <div className="carousel-wrap layout_padding2-top">
                         <Swiper
+                            ref={swiperRef}
                             loop={true} // Enables infinite looping
                             spaceBetween={10} // Equivalent to margin: 10 in Owl Carousel
                             navigation={{
@@ -62,9 +76,7 @@ const Client = () => {
                                             </div>
                                         </div>
                                         <div className="client_text">
-                                            <p> chunks as necessary, making this the first true generator on the
-                                                Internet. It uses a dictionary of over 200 Latin words, combined
-                                                with a handful of model sentence structures, to generate Lorem Ipsum
+                                            <p> {t('client.client1Text')}
                                             </p>
                                         </div>
                                     </div>
@@ -92,9 +104,7 @@ const Client = () => {
                                         </div>
                                         <div className="client_text">
                                             <p>
-                                                chunks as necessary, making this the first true generator on the
-                                                Internet. It uses a dictionary of over 200 Latin words, combined with a
-                                                handful of model sentence structures, to generate Lorem Ipsum
+                                                {t('client.client2Text')}
                                             </p>
                                         </div>
                                     </div>
@@ -124,9 +134,7 @@ const Client = () => {
                                         </div>
                                         <div className="client_text">
                                             <p>
-                                                chunks as necessary, making this the first true generator on the
-                                                Internet. It uses a dictionary of over 200 Latin words, combined with a
-                                                handful of model sentence structures, to generate Lorem Ipsum
+                                                {t('client.client1Text')}
                                             </p>
                                         </div>
                                     </div>
@@ -156,9 +164,7 @@ const Client = () => {
                                         </div>
                                         <div class="client_text">
                                             <p>
-                                                chunks as necessary, making this the first true generator on the
-                                                Internet. It uses a dictionary of over 200 Latin words, combined with a
-                                                handful of model sentence structures, to generate Lorem Ipsum
+                                                {t('client.client1Text')}
                                             </p>
                                         </div>
                                     </div>

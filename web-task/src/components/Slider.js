@@ -1,6 +1,9 @@
 import sliderImg from "../assets/images/slider-img.png";
+import { useTranslation } from 'react-i18next';
 
 const Slider = () => {
+    const { t } = useTranslation(); // Access the translation function
+
     return (
         <>
             <section className="slider_section ">
@@ -9,17 +12,16 @@ const Slider = () => {
                         <div className="col-md-6 ">
                             <div className="detail-box">
                                 <h1>
-                                    Repair and <br/>
-                                    Maintenance <br/>
-                                    Services
+                                    {t('slider.titleLine1')} <br />
+                                    {t('slider.titleLine2')} <br />
+                                    {t('slider.titleLine3')}
                                 </h1>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum voluptatem
-                                    adipisci. Quos molestiae saepe dicta nobis pariatur, tempora iusto, ad possimus
-                                    soluta hic praesentium mollitia consequatur beatae, aspernatur culpa.
+                                    {t('slider.description')}
+
                                 </p>
                                 <a href="#">
-                                    Contact Us
+                                    {t('slider.contactUs')}
                                 </a>
                             </div>
                         </div>
