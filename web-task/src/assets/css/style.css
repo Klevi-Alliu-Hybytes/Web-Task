@@ -597,6 +597,8 @@ a:focus {
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     padding: 25px;
+
+
 }
 
 .client_section .box .client_id {
@@ -606,9 +608,12 @@ a:focus {
 }
 
 .client_section .box .client_id .img-box {
-    width: 125px;
-    min-width: 125px;
-    margin-right: 15px;
+    width: 125px; /* Ensure fixed width */
+    min-width: 125px; /* Prevent resizing smaller than 125px */
+    margin-right: 15px; /* Spacing between image and text */
+    height: 125px; /* Optional: Set a fixed height for uniformity */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+
 }
 
 .client_section .box .client_id .img-box img {
@@ -704,6 +709,18 @@ a:focus {
     height: 135px;
 }
 
+.message-box{
+    height: 40px; /* Match the height of other inputs */
+    width: 100%; /* Ensure it spans the full width like other inputs */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    resize: vertical; /* Allow vertical resizing but prevent horizontal resizing */
+    padding: 10px; /* Ensure consistent padding */
+    font-size: 1rem; /* Match font size for uniformity */
+    border: 1px solid #ccc; /* Optional: Match border style with other inputs */
+    border-radius: 5px; /* Optional: Match border radius with other inputs */
+
+
+}
 .contact_section button {
     border: none;
     display: inline-block;
