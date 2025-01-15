@@ -1,4 +1,4 @@
-import professionalImg from "../assets/images/professional-img.png";
+import professionalImg from "../assets/images/cl1-removebg.png";
 import { useTranslation } from 'react-i18next';
 
 const Professional = () => {
@@ -11,7 +11,7 @@ const Professional = () => {
                     <div className="row">
                         <div className="col-md-6">
                             <div className="img-box">
-                                <img src={professionalImg} alt=""/>
+                                <img src={professionalImg} alt="" style={{ width: '700px', height: '500px' }}/>
                             </div>
                         </div>
                         <div className="col-md-6 ">

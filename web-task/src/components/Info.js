@@ -16,11 +16,11 @@ const Info = () => {
         <>
             <section className="info_section">
                 <div className="container">
-                    <div className="language-switcher">
-                        <button onClick={toggleLanguage}>
-                            {i18n.language === 'en' ? 'Switch to Arabic' : 'Switch to English'}
-                        </button>
-                    </div>
+                    {/*<div className="language-switcher">*/}
+                    {/*    <button onClick={toggleLanguage}>*/}
+                    {/*        {i18n.language === 'en' ? 'Switch to Arabic' : 'Switch to English'}*/}
+                    {/*    </button>*/}
+                    {/*</div>*/}
                     <h4>{t('info.getInTouch')}</h4>
                     <div className="row">
                         <div className="col-lg-10 mx-auto">

@@ -3,8 +3,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { useTranslation } from 'react-i18next';
 
-import client1Img from "../assets/images/client-1.jpg";
-import client2Img from "../assets/images/client-2.jpg";
+import client1Img from "../assets/images/client1.png";
+import client2Img from "../assets/images/client2.png";
+import client3Img from "../assets/images/client3.png";
+import client4Img from "../assets/images/client4.png";
 import i18n from "i18next";
 
 const Client = () => {
@@ -65,7 +67,7 @@ const Client = () => {
                                             </div>
                                             <div className="client_detail">
                                                 <div className="client_info">
-                                                    <h6>Jorch Morik</h6>
+                                                    <h6>Benjamin Cooke</h6>
                                                     <i className="fa fa-star" aria-hidden="true"></i>
                                                     <i className="fa fa-star" aria-hidden="true"></i>
                                                     <i className="fa fa-star" aria-hidden="true"></i>
@@ -92,7 +94,7 @@ const Client = () => {
                                             </div>
                                             <div className="client_detail">
                                                 <div className="client_info">
-                                                    <h6>Jorch morik</h6>
+                                                    <h6>Mohammad Herbert</h6>
                                                     <i className="fa fa-star" aria-hidden="true"></i>
                                                     <i className="fa fa-star" aria-hidden="true"></i>
                                                     <i className="fa fa-star" aria-hidden="true"></i>
@@ -116,12 +118,12 @@ const Client = () => {
                                     <div className="box">
                                         <div className="client_id">
                                             <div className="img-box">
-                                                <img src={client1Img} alt=""/>
+                                                <img src={client3Img} alt=""/>
                                             </div>
                                             <div className="client_detail">
                                                 <div className="client_info">
                                                     <h6>
-                                                        Jorch morik
+                                                        Tyler Hunt
                                                     </h6>
                                                     <i className="fa fa-star" aria-hidden="true"></i>
                                                     <i className="fa fa-star" aria-hidden="true"></i>
@@ -134,7 +136,7 @@ const Client = () => {
                                         </div>
                                         <div className="client_text">
                                             <p>
-                                                {t('client.client1Text')}
+                                                {t('client.client3Text')}
                                             </p>
                                         </div>
                                     </div>
@@ -146,12 +148,12 @@ const Client = () => {
                                     <div class="box">
                                         <div class="client_id">
                                             <div class="img-box">
-                                                <img src={client2Img} alt=""></img>
+                                                <img src={client4Img} alt=""></img>
                                             </div>
                                             <div class="client_detail">
                                                 <div class="client_info">
                                                     <h6>
-                                                        Jorch morik
+                                                        Edward Barton
                                                     </h6>
                                                     <i class="fa fa-star" aria-hidden="true"></i>
                                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -164,7 +166,7 @@ const Client = () => {
                                         </div>
                                         <div class="client_text">
                                             <p>
-                                                {t('client.client1Text')}
+                                                {t('client.client4Text')}
                                             </p>
                                         </div>
                                     </div>

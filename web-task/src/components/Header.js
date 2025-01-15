@@ -20,13 +20,13 @@ const Header = () => {
                 <div className="header_top">
                     <div className="container-fluid">
                         <div className="contact_nav">
-                            <a href="tel:+01123455678990">
+                            <a href="tel:+447351206618">
                                 <FontAwesomeIcon icon={faPhone}/>
-                                <span>{t('header.call')}: +01 123455678990</span>
+                                <span>{t('header.call')}: +447351206618</span>
                             </a>
-                            <a href="mailto:demo@gmail.com">
+                            <a href="mailto:info.oecleaningservices@gmail.com?subject=Cleaning%20Service%20Inquiry&body=Hi%20there,%0A%0AI%20would%20like%20to%20inquire%20about%20your%20cleaning%20services.">
                                 <FontAwesomeIcon icon={faEnvelope}/>
-                                <span>{t('header.email')}: demo@gmail.com</span>
+                                <span>{t('header.email')}: info.oecleaningservices@gmail.com</span>
                             </a>
                         </div>
                     </div>
@@ -36,7 +36,7 @@ const Header = () => {
                     <div className="container-fluid">
                         <nav className="navbar navbar-expand-lg custom_nav-container">
                             <Link className="navbar-brand" to="/">
-                                <span>{t('header.brandName')}</span>
+                                <span> O&E Shine And Sparkle Cleaning LTD</span>
                             </Link>
                             {/* Navbar Toggler for Mobile View */}
                             <button

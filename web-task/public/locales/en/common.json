@@ -1,8 +1,7 @@
 {
   "about": {
     "title": "About us",
-    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised.",
-    "readMore": "Read More",
+    "description":"At O&E Shine and Sparkle Cleaning LTD, we specialize in bringing brilliance and freshness to your home or business. Whether you need a quick tidy-up or a deep, transformative clean, our skilled and reliable team is here to deliver exceptional results. We pride ourselves on attention to detail, eco-friendly practices, and a personalized approach to meet your unique cleaning needs.\n\nFrom sparkling windows to pristine floors, every corner of your space will radiate cleanliness and comfort. Let us handle the mess so you can focus on what matters most.\n\nExperience the Shine. Feel the Sparkle.\n\nContact us today to schedule your cleaning service!" ,   "readMore": "Read More",
     "altText": "About us image"
   },
   "info": {
@@ -14,8 +13,11 @@
   },
   "client": {
     "heading": "What Our Clients Say",
-    "client1Text": "Chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum.",
-    "client2Text": "Chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum."
+    "client1Text": "Their office cleaning service is top-notch! The team is always punctual, professional, and leaves our workspace looking immaculate. We’ve noticed a huge improvement in cleanliness since hiring them.",
+    "client2Text": "I’ve never seen my home so clean! From scrubbing hard-to-reach places to making every surface shine, they exceeded all my expectations. Their attention to detail is incredible, and I highly recommend their services.",
+    "client3Text": "We’ve relied on their cleaning services for months, and they’ve never let us down. Our office feels fresh and organized after every visit. Their consistent quality and friendly staff keep us coming back.",
+    "client4Text": "I couldn’t be happier with their home cleaning service. They’re thorough, fast, and use high-quality products that leave my house spotless and smelling great. It’s a joy to work with such a reliable team!"
+
   },
   "contact": {
     "heading": "Contact Us",
@@ -26,9 +28,9 @@
     "sendButton": "SEND"
   },
   "feature": {
-    "repair": "Repair",
-    "improve": "Improve",
-    "maintain": "Maintain"
+    "repair": "Sparkle",
+    "improve": "Refresh",
+    "maintain": "Shine"
   },
   "footer": {
     "allRightsReserved": "All Rights Reserved By",
@@ -37,7 +39,7 @@
   "header": {
     "call": "Call",
     "email": "Email",
-    "brandName": "Inance",
+    "brandName": "",
     "toggleNavigation": "Toggle navigation",
     "home": "Home",
     "about": "About",
@@ -52,19 +54,18 @@
   },
   "service": {
     "title": "Our Services",
-    "maintenance": "Maintenance",
-    "maintenanceDescription": "When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.",
-    "electrical": "Electrical",
-    "electricalDescription": "When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.",
-    "plumbing": "Plumbing",
-    "plumbingDescription": "When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.",
+    "maintenance": "Sparkle",
+    "maintenanceDescription": "Our Sparkle service ensures every corner shines, from floors to fixtures. We focus on deep cleaning and restoring a fresh, polished look to your space.",
+    "electrical": "Refresh",
+    "electricalDescription": "The Refresh service revitalizes your environment with thorough cleaning and care, leaving your home or office feeling renewed and inviting.",
+    "plumbing": "Shine",
+    "plumbingDescription": "With our Shine service, we deliver top-to-bottom cleanliness, ensuring every surface sparkles and radiates a sense of order and cleanliness.",
     "viewMore": "View More"
   },
   "slider": {
-    "titleLine1": "Repair and",
-    "titleLine2": "Maintenance",
-    "titleLine3": "Services",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum voluptatem adipisci. Quos molestiae saepe dicta nobis pariatur, tempora iusto, ad possimus soluta hic praesentium mollitia consequatur beatae, aspernatur culpa.",
-    "contactUs": "Contact Us"
+    "titleLine1": "Shine & Sparkle",
+    "titleLine2": "",
+    "titleLine3": "",
+    "description": "At O&E Shine and Sparkle, we deliver exceptional cleaning tailored to your needs. From homes to offices, our professional team ensures every corner shines.\n\nExperience the sparkle. Book your service today!",  "contactUs": "Contact Us"
   }
 }

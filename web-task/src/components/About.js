@@ -1,4 +1,4 @@
-import aboutImg from "../assets/images/about-img.jpg";
+import aboutImg from "../assets/images/cl3.png";
 import { useTranslation } from 'react-i18next';
 const About = () => {
     const { t } = useTranslation();
@@ -17,7 +17,7 @@ const About = () => {
                         </div>
                         <div className="col-lg-7 col-md-6">
                             <div className="img-box">
-                                <img src={aboutImg} alt={t('about.altText')} />
+                                <img src={aboutImg} alt={t('about.altText')}  style={{ width: '700px', height: '485px' }}/>
                             </div>
                         </div>
                     </div>

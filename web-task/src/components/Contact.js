@@ -27,7 +27,7 @@ const Contact = () => {
         <section className="contact_section layout_padding">
             <div className="container">
                 <div className="heading_container">
-                    <h2>{t("contact.heading")}</h2>
+                    <h2 id="ContactUs">{t("contact.heading")}</h2>
                 </div>
                 <div className="row">
                     <div className="col-md-6">

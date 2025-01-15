@@ -536,6 +536,9 @@ a:focus {
 
 .service_section .box .detail-box {
     margin-top: 15px;
+    height: 200px; /* Set a fixed height for consistency */
+    overflow: hidden; /* Prevent text from expanding the box */
+
 }
 
 .service_section .box .detail-box h5 {
@@ -639,6 +642,10 @@ a:focus {
 
 .client_section .box .client_text {
     margin-top: 20px;
+    height: 150px; /* Set a fixed height to maintain consistency */
+    overflow: hidden; /* Prevent text from expanding the box */
+    text-overflow: ellipsis; /* Optional: Add ellipsis for overflowing text */
+    word-wrap: break-word; /* Ensure long words break properly */
 }
 
 .client_section .owl-carousel .owl-nav {

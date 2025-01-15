@@ -1,8 +1,17 @@
-import sliderImg from "../assets/images/slider-img.png";
+import sliderImg from "../assets/images/cl2.png";
 import { useTranslation } from 'react-i18next';
+import { useEffect } from "react";
 
 const Slider = () => {
     const { t } = useTranslation(); // Access the translation function
+    const handleScroll = (sectionId) => {
+        window.location.hash = sectionId;
+    }
+    useEffect(() => {
+        if (window.location.hash === "#contact-us") {
+            document.getElementById("contact-us")?.scrollIntoView();
+        }
+    }, []);
 
     return (
         <>
@@ -20,14 +29,15 @@ const Slider = () => {
                                     {t('slider.description')}
 
                                 </p>
-                                <a href="#">
+                                    <a onClick={() => handleScroll('ContactUs')}>
+
                                     {t('slider.contactUs')}
                                 </a>
                             </div>
                         </div>
                         <div className="col-md-6">
                             <div className="img-box">
-                                <img src={sliderImg} alt=""/>
+                                <img src={sliderImg} alt="" style={{ width: '700px', height: '700px' }}/>
                             </div>
                         </div>
                     </div>
