@@ -7,10 +7,10 @@ const Info = () => {
     const { t, i18n } = useTranslation();
 
     // Function to switch between English and Arabic
-    const toggleLanguage = () => {
-        const newLang = i18n.language === 'en' ? 'ar' : 'en';
-        i18n.changeLanguage(newLang);
-    };
+    // const toggleLanguage = () => {
+    //     const newLang = i18n.language === 'en' ? 'ar' : 'en';
+    //     i18n.changeLanguage(newLang);
+    // };
 
     return (
         <>
@@ -27,7 +27,10 @@ const Info = () => {
                             <div className="info_items">
                                 <div className="row">
                                     <div className="col-md-4">
-                                        <a href="">
+                                        <a
+                                            href="https://www.google.com/maps?q=52.2405,-0.9027"
+                                            target="_blank"
+                                            rel="noopener noreferrer">
                                             <div className="item">
                                                 <div className="img-box">
                                                     <FontAwesomeIcon icon={faMapMarkerAlt} />
@@ -37,17 +40,18 @@ const Info = () => {
                                         </a>
                                     </div>
                                     <div className="col-md-4">
-                                        <a href="">
+                                        <a href="tel:+447351206618">
                                             <div className="item">
                                                 <div className="img-box">
                                                     <FontAwesomeIcon icon={faPhone} />
                                                 </div>
                                                 <p>{t('info.phone')}</p>
+
                                             </div>
                                         </a>
                                     </div>
                                     <div className="col-md-4">
-                                        <a href="">
+                                        <a href="mailto:info.oecleaningservices@gmail.com">
                                             <div className="item">
                                                 <div className="img-box">
                                                     <FontAwesomeIcon icon={faEnvelope} />

@@ -12,7 +12,6 @@ const About = () => {
                             <div className="detail-box">
                                 <h2>{t('about.title')}</h2>
                                 <p>{t('about.description')}</p>
-                                <a href="#">{t('about.readMore')}</a>
                             </div>
                         </div>
                         <div className="col-lg-7 col-md-6">

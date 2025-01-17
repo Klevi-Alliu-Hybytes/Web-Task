@@ -615,6 +615,70 @@ a:focus {
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 
 }
+/* General Styles for Form Inputs */
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm textarea {
+    color: #000; /* Black text color for visibility */
+    background-color: #fff; /* White background for clear contrast */
+    font-size: 16px; /* Comfortable text size */
+    padding: 10px; /* Spacing inside the input fields */
+    border: 1px solid #ccc; /* Light border for definition */
+    border-radius: 4px; /* Slightly rounded corners for aesthetics */
+    width: 100%; /* Full-width fields for consistency */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    outline: none; /* Remove default focus outline */
+}
+
+/* Placeholder Styling */
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+    color: #aaa; /* Light gray for placeholders */
+    font-style: italic; /* Subtle differentiation from input text */
+}
+
+/* Input Focus State */
+.contactForm input:focus,
+.contactForm textarea:focus {
+    border-color: #007BFF; /* Highlighted border color */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow effect */
+    background-color: #f9f9f9; /* Slightly lighter background for focus */
+}
+
+/* Error Styling */
+.contactForm .error {
+    color: red; /* Red text for error messages */
+    font-size: 14px; /* Smaller text size for errors */
+    margin-top: 4px; /* Space above the error message */
+    display: block; /* Ensure errors are on their own line */
+}
+
+/* Button Styling */
+.contactForm button {
+    background-color: #007BFF; /* Primary blue button */
+    color: #fff; /* White text on the button */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Comfortable padding */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Text size for readability */
+}
+
+/* Button Hover */
+.contactForm button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Optional: Styling the Form Container */
+.contactForm {
+    max-width: 600px; /* Limit form width */
+    margin: 0 auto; /* Center form on the page */
+    padding: 20px; /* Add padding inside the form */
+    background-color: #f8f9fa; /* Light gray background */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
 
 .client_section .box .client_id .img-box img {
     width: 100%;

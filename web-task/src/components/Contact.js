@@ -1,34 +1,35 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useTranslation } from 'react-i18next';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+import pinIcon from '../assets/images/pin_icon.svg'; // Import as URL
 
 const Contact = () => {
     const { t } = useTranslation();
     const [formData, setFormData] = useState({ name: "", phone: "", email: "", message: "" });
     const [errors, setErrors] = useState({});
 
-    useEffect(() => {
-        const script = document.createElement("script");
-        script.src = "https://maps.googleapis.com/maps/api/js";
-        script.async = true;
-        script.onload = () => {
-            const map = new window.google.maps.Map(document.getElementById("googleMap"), {
-                center: { lat: 40.712775, lng: -74.005973 },
-                zoom: 15,
-            });
-        };
-        document.head.appendChild(script);
-
-        return () => {
-            document.head.removeChild(script);
-        };
-    }, []);
-
+    const northamptonCoordinates = [52.2405, -0.9027]; // Northampton coordinates
+    const customIcon = L.icon({
+        iconUrl: pinIcon, // Use the SVG as a URL
+        iconSize: [32, 32], // Set the size of your icon
+        iconAnchor: [16, 32], // Anchor point for proper alignment
+        popupAnchor: [0, -32], // Popup position relative to the marker
+    })
     const validateForm = () => {
         const newErrors = {};
+        const phoneRegex = /^\+?[0-9\s-()]{10,14}$/;
+
         if (!formData.name.trim()) newErrors.name = t("contact.errorName");
-        if (!formData.phone.trim() || !/^\d{10}$/.test(formData.phone)) newErrors.phone = t("contact.errorPhone");
-        if (!formData.email.trim() || !/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = t("contact.errorEmail");
+        if (!formData.phone.trim() || !phoneRegex.test(formData.phone)) {
+            newErrors.phone = t("contact.errorPhone");
+        }
+        if (!formData.email.trim() || !/\S+@\S+\.\S+/.test(formData.email)) {
+            newErrors.email = t("contact.errorEmail");
+        }
         if (!formData.message.trim()) newErrors.message = t("contact.errorMessage");
+
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
@@ -54,7 +55,7 @@ const Contact = () => {
                 </div>
                 <div className="row">
                     <div className="col-md-6">
-                        <form onSubmit={handleSubmit}>
+                        <form className= "contactForm" onSubmit={handleSubmit}>
                             <div>
                                 <input
                                     type="text"
@@ -103,7 +104,24 @@ const Contact = () => {
                     <div className="col-md-6">
                         <div className="map_container">
                             <div className="map">
-                                <div id="googleMap" style={{ width: "100%", height: "400px" }}></div>
+                                <MapContainer
+                                    center={northamptonCoordinates}
+                                    zoom={12}
+                                    style={{ height: '400px', width: '100%' }}
+                                >
+                                    {/* OpenStreetMap Tile Layer */}
+                                    <TileLayer
+                                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                                    />
+
+                                    {/* Custom Marker */}
+                                    <Marker position={northamptonCoordinates} icon={customIcon}>
+                                        <Popup>
+                                            <b>O&E Shine And Sparkle Cleaning LTD</b>
+                                        </Popup>
+                                    </Marker>
+                                </MapContainer>
                             </div>
                         </div>
                     </div>
