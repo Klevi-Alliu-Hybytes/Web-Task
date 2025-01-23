@@ -5,12 +5,12 @@ const About = () => {
 
     return (
         <>
-            <section className="about_section layout_padding-bottom">
+            <section id="aboutUsId" className="about_section layout_padding-bottom">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5 col-md-6">
                             <div className="detail-box">
-                                <h2>{t('about.title')}</h2>
+                                <h2 > {t('about.title')}</h2>
                                 <p>{t('about.description')}</p>
                             </div>
                         </div>

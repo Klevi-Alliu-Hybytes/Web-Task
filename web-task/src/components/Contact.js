@@ -48,10 +48,10 @@ const Contact = () => {
     };
 
     return (
-        <section className="contact_section layout_padding">
+        <section id= "ContactUs" className="contact_section layout_padding">
             <div className="container">
                 <div className="heading_container">
-                    <h2 id="ContactUs">{t("contact.heading")}</h2>
+                    <h2>{t("contact.heading")}</h2>
                 </div>
                 <div className="row">
                     <div className="col-md-6">

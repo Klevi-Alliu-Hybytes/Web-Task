@@ -21,25 +21,23 @@ const Slider = () => {
                         <div className="col-md-6 ">
                             <div className="detail-box">
                                 <h1>
-                                    {t('slider.titleLine1')} <br />
-                                    {t('slider.titleLine2')} <br />
+                                    {t('slider.titleLine1')} <br/>
+                                    {t('slider.titleLine2')} <br/>
                                     {t('slider.titleLine3')}
                                 </h1>
                                 <p>
                                     {t('slider.description')}
 
                                 </p>
-                                    <a onClick={() => handleScroll('ContactUs')}>
-
-                                    {t('slider.contactUs')}
-                                </a>
                             </div>
                         </div>
+
                         <div className="col-md-6">
                             <div className="img-box">
-                                <img src={sliderImg} alt="" style={{ width: '700px', height: '700px' }}/>
+                                <img src={sliderImg} alt="" className="responsive-img"/>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>

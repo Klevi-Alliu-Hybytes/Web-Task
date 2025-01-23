@@ -12,7 +12,7 @@
     "followUs": "Follow Us"
   },
   "client": {
-    "heading": "What Our Clients Say",
+    "heading": "Customer statement",
     "client1Text": "Their office cleaning service is top-notch! The team is always punctual, professional, and leaves our workspace looking immaculate. We’ve noticed a huge improvement in cleanliness since hiring them.",
     "client2Text": "I’ve never seen my home so clean! From scrubbing hard-to-reach places to making every surface shine, they exceeded all my expectations. Their attention to detail is incredible, and I highly recommend their services.",
     "client3Text": "We’ve relied on their cleaning services for months, and they’ve never let us down. Our office feels fresh and organized after every visit. Their consistent quality and friendly staff keep us coming back.",
@@ -33,8 +33,8 @@
     "maintain": "Shine"
   },
   "footer": {
-    "allRightsReserved": "All Rights Reserved By",
-    "freeHtmlTemplates": "Free Html Templates"
+    "allRightsReserved": "All Rights Reserved",
+    "freeHtmlTemplates": ""
   },
   "header": {
     "call": "Call",
@@ -47,20 +47,25 @@
     "contactUs": "Contact Us"
   },
   "professional": {
-    "title1": "We Provide Professional",
-    "title2": "Home Services.",
+    "title1": "We Provide Qualified",
+    "title2": "Home Services",
     "description": "At O&E Shine and Sparkle Cleaning LTD, we take pride in delivering professional home services tailored to meet your unique needs. Our experienced team is committed to creating a clean, comfortable, and healthy living environment for you and your family. Whether it’s regular cleaning, deep cleaning, or specialized services, we ensure exceptional attention to detail and quality in every task. Let us help you maintain a spotless home, so you can focus on what truly matters.",
     "readMore": "Read More"
   },
   "service": {
     "title": "Our Services",
-    "maintenance": "Sparkle",
-    "maintenanceDescription": "Our Sparkle service ensures every corner shines, from floors to fixtures. We focus on deep cleaning and restoring a fresh, polished look to your space.",
-    "electrical": "Refresh",
-    "electricalDescription": "The Refresh service revitalizes your environment with thorough cleaning and care, leaving your home or office feeling renewed and inviting.",
-    "plumbing": "Shine",
-    "plumbingDescription": "With our Shine service, we deliver top-to-bottom cleanliness, ensuring every surface sparkles and radiates a sense of order and cleanliness.",
-    "viewMore": "View More"
+    "s1": "General Cleaning",
+    "s1Text": "Our General Cleaning service provides comprehensive cleaning for your home or office, covering all surfaces, floors, and fixtures to ensure a spotless and hygienic environment.",
+    "s2": "Residential Cleaning",
+    "s2Text": "Tailored for homes, our Residential Cleaning service offers a thorough clean of living spaces, bedrooms, kitchens, and bathrooms, creating a clean and cozy environment for your family.",
+    "s3": "Commercial Cleaning",
+    "s3Text": "Our Commercial Cleaning service ensures professional-grade cleanliness for your office, retail, or business space, helping you maintain a productive and welcoming environment.",
+    "s4": "Move-In/Move-Out Cleaning",
+    "s4Text": "Whether you’re moving in or out, our Move-In/Move-Out Cleaning service ensures every nook and cranny is spotless, leaving your space in perfect condition for the next occupant.",
+    "s5": "Specialized Deep Cleaning",
+    "s5Text": "Our Specialized Deep Cleaning service targets hard-to-clean areas, tackling dirt, grime, and buildup to rejuvenate your space and achieve a pristine level of cleanliness.",
+    "s6": "Post-Construction Cleaning",
+    "s6Text": "Our Post-Construction Cleaning service removes dust, debris, and residue left behind after renovations, delivering a clean, polished finish to your newly completed space."
   },
   "slider": {
     "titleLine1": "Shine & Sparkle",

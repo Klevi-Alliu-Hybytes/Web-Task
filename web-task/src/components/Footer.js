@@ -9,7 +9,6 @@ const Footer = () => {
                 <div className="container">
                     <p>
                         &copy; <span id="displayDateYear"></span> {t('footer.allRightsReserved')}
-                        <a href="https://html.design/">{t('footer.freeHtmlTemplates')}</a>
                     </p>
                 </div>
             </footer>

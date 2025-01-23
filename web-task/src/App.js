@@ -3,9 +3,6 @@ import './i18n/i18n.js';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import ServicesPage from "./pages/ServicesPage";
-import ContactPage from "./pages/ContactPage";
 import "./assets/css/bootstrap.css";
 import "./assets/css/responsive.css";
 import "./assets/css/style.css";
@@ -13,6 +10,7 @@ import "./assets/css/style.scss";
 import "./assets/css/style.css.map";
 import { useTranslation } from 'react-i18next';
 import {useEffect} from "react";
+import ScrollToHash from "./components/ScrollToHash"; // Import the ScrollToHash component
 
 function App() {
 
@@ -22,12 +20,10 @@ function App() {
     }, [i18n.language]);
     return (
       <Router>
-        <Header />
+          <ScrollToHash />
+          <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </Router>
   );

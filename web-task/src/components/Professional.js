@@ -23,9 +23,7 @@ const Professional = () => {
                                 <p>
                                     {t('professional.description')}
                                 </p>
-                                <a href="">
-                                    {t('professional.readMore')}
-                                </a>
+
                             </div>
                         </div>
                     </div>

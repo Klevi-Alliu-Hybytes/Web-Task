@@ -1,15 +1,18 @@
 
-import s1Img from "../assets/images/s1.png";
-import s2Img from "../assets/images/s2.png";
-import s3Img from "../assets/images/s3.png";
 import { useTranslation } from 'react-i18next';
+import { ReactComponent as S1Icon } from '../assets/images/clean2.svg';
+import { ReactComponent as S2Icon } from '../assets/images/clean3.svg';
+import { ReactComponent as S3Icon } from '../assets/images/clean4.svg';
+import { ReactComponent as S4Icon } from '../assets/images/clean5.svg';
+import { ReactComponent as S5Icon } from '../assets/images/clean6.svg';
+import { ReactComponent as S6Icon } from '../assets/images/clean7.svg';
 
 const Service = () => {
     const { t } = useTranslation(); // Access the translation function
 
     return (
     <>
-    <section className="service_section layout_padding">
+    <section id="serviceId" className="service_section layout_padding">
         <div className="container ">
             <div className="heading_container heading_center">
                 <h2> {t('service.title')}</h2>
@@ -18,14 +21,79 @@ const Service = () => {
                 <div className="col-sm-6 col-md-4 mx-auto">
                     <div className="box ">
                         <div className="img-box">
-                            <img src={s1Img} alt=""/>
+                            <S1Icon />
                         </div>
                         <div className="detail-box">
                             <h5>
-                                {t('service.maintenance')}
+                                {t('service.s1')}
                             </h5>
                             <p>
-                                {t('service.maintenanceDescription')}
+                                {t('service.s1Text')}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-sm-6 col-md-4 mx-auto">
+                    <div className="box ">
+                        <div className="img-box">
+                            <S2Icon />
+                        </div>
+                        <div className="detail-box">
+                            <h5>
+                                {t('service.s2')}
+                            </h5>
+                            <p>
+                                {t('service.s2Text')}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-sm-6 col-md-4 mx-auto">
+                    <div className="box ">
+                        <div className="img-box">
+                            <S3Icon />
+                        </div>
+                        <div className="detail-box">
+                            <h5>
+                                {t('service.s3')}
+                            </h5>
+                            <p>
+                                {t('service.s3Text')}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-sm-6 col-md-4 mx-auto">
+                    <div className="box ">
+                        <div className="img-box">
+                            <S4Icon />
+                        </div>
+                        <div className="detail-box">
+                            <h5>
+                                {t('service.s4')}
+                            </h5>
+                            <p>
+                                {t('service.s4Text')}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div className="col-sm-6 col-md-4 mx-auto">
+                    <div className="box ">
+                        <div className="img-box">
+                            <S5Icon />
+                        </div>
+                        <div className="detail-box">
+                            <h5>
+                                {t('service.s5')}
+                            </h5>
+                            <p>
+                                {t('service.s5Text')}
                             </p>
                         </div>
                     </div>
@@ -33,44 +101,24 @@ const Service = () => {
                 <div className="col-sm-6 col-md-4 mx-auto">
                     <div className="box ">
                         <div className="img-box">
-                            <img src={s2Img} alt=""/>
+                            <S6Icon />
                         </div>
                         <div className="detail-box">
                             <h5>
-                                {t('service.electrical')}
+                                {t('service.s6')}
                             </h5>
                             <p>
-                                {t('service.electricalDescription')}
+                                {t('service.s6Text')}
                             </p>
                         </div>
                     </div>
                 </div>
-                <div className="col-sm-6 col-md-4 mx-auto">
-                    <div className="box ">
-                        <div className="img-box">
-                            <img src={s3Img} alt=""/>
-                        </div>
-                        <div className="detail-box">
-                            <h5>
-                                {t('service.plumbing')}
-                            </h5>
-                            <p>
-                                {t('service.plumbingDescription')}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="btn-box">
-                <a href="">
-                    >{t('service.viewMore')}
-                </a>
             </div>
         </div>
     </section>
 
-</>
-)
+    </>
+    )
 }
 
 export default Service;

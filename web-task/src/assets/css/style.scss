@@ -149,7 +149,17 @@ a:focus {
 }
 
 
+.navbar-brand {
+  display: flex; /* Use flex to align the image and text horizontally */
+  align-items: center; /* Vertically align the image and text */
+  gap: 10px; /* Add space between the logo and the text */
+}
 
+.navbar-brand .logo {
+  width: 40px; /* Adjust width of the logo */
+  height: auto; /* Keep the aspect ratio of the logo */
+  margin-right: 10px; /* Add some space to the right of the logo */
+}
 .navbar-brand {
   padding: 0;
   margin: 0;
@@ -304,51 +314,64 @@ a:focus {
 /*end header section*/
 
 /* slider section */
+
+//.img-box img {
+//  border-radius: 10px; /* Optional: Adds rounded corners */
+//  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+//}
+
+@media (max-width: 768px) {
+  .img-box {
+    margin-top: 20px; /* Adds spacing on smaller screens */
+  }
+}
 .slider_section {
-  flex: 1;
   display: flex;
   align-items: center;
   background-size: cover;
   background-position: bottom;
+  padding: 40px 0; /* Add some padding for spacing */
+}
 
-  .row {
-    align-items: center;
-  }
+.slider_section .row {
+  align-items: center;
+}
 
-  #customCarousel1 {
-    width: 100%;
-    position: unset;
-  }
+.slider_section .detail-box {
+  padding-bottom: 90px;
+  text-align: left; /* Ensure text aligns correctly */
+  max-width: 600px; /* Limit the text box width for better readability */
+}
 
+.slider_section .detail-box h1 {
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: $primary1;
+  font-size: 2.5rem; /* Adjust font size to make it more prominent */
+}
 
-  .detail-box {
-    padding-bottom: 90px;
+.slider_section .detail-box p {
+  color: #444;
+  font-size: 1.125rem; /* Larger font size for better readability */
+  line-height: 1.8; /* Increase line height for better spacing */
+  font-family: 'Arial', sans-serif; /* Make the font more modern */
+  max-width: 550px; /* Constrain the text box width */
+  margin-bottom: 20px; /* Add margin for spacing below the paragraph */
+  text-align: justify; /* Justify the text for better alignment */
+  letter-spacing: 0.5px; /* Slight spacing between letters for clarity */
+}
 
-    h1 {
-      font-weight: bold;
-      margin-bottom: 25px;
-      color: $primary1;
+.slider_section .img-box {
+  display: flex;
+  justify-content: center; /* Center the image */
+  align-items: center;
+}
 
-    }
-
-    p {
-      color: #444;
-      font-size: 15px;
-    }
-
-    a {
-      @include hero_btn($primary2, $white, 10px, 45px, 5px);
-      margin-top: 15px;
-    }
-  }
-
-  .img-box {
-    img {
-      width: 100%;
-    }
-  }
-
-
+.slider_section .img-box img {
+  width: 700px; /* Maintain the width as per your requirement */
+  height: 700px; /* Keep the height fixed */
+  object-fit: cover; /* Ensure the image maintains its aspect ratio */
+  border-radius: 10px; /* Add rounded corners to the image */
 }
 
 // end slider section
@@ -357,7 +380,12 @@ a:focus {
 // feature section
 
 .feature_section {
-  transform: translateY(-50%);
+  transform: translateY(-50%); /* Default for desktop and larger screens */
+
+  /* Override for mobile view */
+  @media (max-width: 768px) { /* Adjust the max-width based on your mobile breakpoint */
+    transform: none; /* Disable the transform effect on mobile */
+  }
 
   .feature_container {
     display: flex;
@@ -369,11 +397,11 @@ a:focus {
       align-items: center;
       text-align: center;
       margin: 0 10px;
-      padding: 45px 15px;
+      padding: 43px 15px;
       background-color: $white;
       color: #555089;
       transition: all 0.3s;
-      box-shadow: 0 0 15px 0 rgba($color: #000000, $alpha: .2);
+      box-shadow: 0 0 15px 0 rgba($color: #000000, $alpha: 0.2);
 
       .img-box {
         width: 90px;
@@ -397,7 +425,6 @@ a:focus {
         text-transform: uppercase;
         @include secondary-font();
         margin-bottom: 0;
-
       }
 
       &:hover,
@@ -414,7 +441,6 @@ a:focus {
             }
           }
         }
-
       }
     }
   }
@@ -424,8 +450,8 @@ a:focus {
 
 // about section
 .about_section {
-  background: #f9f9f9; /* Light gray background for a clean look */
-  padding: 70px 0; /* Generous padding for spacing */
+  //background: #f9f9f9; /* Light gray background for a clean look */
+  padding: 30px 0; /* Generous padding for spacing */
 }
 
 .about_section .container {
@@ -531,6 +557,94 @@ a:focus {
 
 
 // professional section
+.professional_section {
+  background: #f4f4f4; /* Light gray background for a clean look */
+  padding: 80px 0; /* Spacious padding for top and bottom */
+}
+
+.professional_section .container {
+  max-width: 1200px; /* Limit the width for better readability */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add spacing for smaller screens */
+}
+
+.professional_section .row {
+  display: flex;
+  flex-wrap: wrap; /* Ensure responsiveness */
+  align-items: center; /* Align vertically */
+}
+
+.professional_section .img-box {
+  text-align: center; /* Center align the image */
+  margin-bottom: 20px; /* Add spacing below the image if needed */
+}
+
+.professional_section .img-box img {
+  width: 90%; /* Slightly increase the image width */
+  max-width: 700px; /* Prevent the image from growing too large */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent extra spacing around the image */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+
+.professional_section .img-box:hover img {
+  transform: scale(1.03); /* Slight zoom on hover */
+}
+
+.professional_section .detail-box {
+  background: #ffffff; /* White background for text */
+  padding: 40px; /* Generous padding */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  color: #333333; /* Dark gray text for readability */
+  text-align: left; /* Align text to the left */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+
+  /* Prevent text from overflowing */
+  word-wrap: break-word; /* Break long words onto the next line if they overflow */
+  overflow-wrap: break-word; /* Ensures the word wrapping works across all browsers */
+
+  /* Optional: Ensures the box doesn’t expand too much */
+  max-width: 100%; /* Prevents the box from becoming too wide */
+  box-sizing: border-box; /* Ensures padding and borders are included in the width calculation */
+
+}
+
+.professional_section .detail-box:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.professional_section .detail-box h2 {
+  font-size: 2.5rem; /* Larger title font size */
+  font-weight: 700; /* Strong emphasis on the title */
+  margin-bottom: 20px; /* Space below the title */
+  color: #222222; /* Slightly darker gray for the title */
+  letter-spacing: 1px; /* Spaced-out letters for elegance */
+
+}
+
+.professional_section .detail-box p {
+  font-size: 1.2rem; /* Comfortable paragraph size */
+  line-height: 1.8; /* Good line spacing for readability */
+  color: #555555; /* Medium gray for paragraph text */
+  margin: 0; /* Remove unnecessary margins */
+}
+
+@media (max-width: 768px) {
+  .professional_section .row {
+    flex-direction: column-reverse; /* Stack content vertically */
+  }
+
+  .professional_section .img-box {
+    margin-bottom: 30px; /* Add spacing between stacked sections */
+  }
+
+  .professional_section .detail-box {
+    text-align: center; /* Center align text on smaller screens */
+  }
+}
 
 .professional_section {
   // background-color: $primary1;
@@ -836,7 +950,6 @@ a:focus {
     &:hover {
       .img-box {
         background-color: $primary2;
-
       }
     }
   }
